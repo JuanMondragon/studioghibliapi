@@ -1,0 +1,345 @@
+* {}
+
+body {
+    margin: 0 auto;
+    background-color: #D95C48;
+    color: #F9F9F9;
+    font-family: 'Gothic A1', sans-serif;
+
+}
+
+.header {
+    background-color: #F4C538;
+    color: #F9F9F9;
+
+
+
+}
+
+
+
+.grid {
+
+
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 0 40px;
+    grid-template-areas: ". content content content content . ";
+    flex: 1;
+    height: 20vh;
+    padding-top: 15px;
+}
+
+.content {
+    grid-area: content;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+
+
+}
+
+.row {
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo {
+    width: 200px;
+    margin-right: 1rem;
+
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+
+
+}
+
+.logo2 {
+    width: 200px;
+    margin-left: 1rem;
+
+}
+
+.header-div {
+    background-image: url("./img/finally.svg");
+    height: 200px;
+    background-position: bottom left;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    align-items: center;
+
+}
+
+
+
+.card {
+    flex: 1;
+    border-radius: 25px;
+    list-style: none;
+    padding: 40px;
+    background-color: #2DACE2;
+    color: black;
+    text-align: center;
+    margin-bottom: 15%;
+    animation: drop 1.5s ease;
+
+
+
+}
+
+
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(-0px);
+    }
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 10%;
+}
+
+.card-info {
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #F9F9F9;
+    font-size: 24px;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #F9F9F9;
+
+}
+
+.card {
+    filter: drop-shadow(0px 5px 3px black);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.list {
+
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
+    text-align: center;
+
+
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .presentation {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 80%;
+
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 30px
+    }
+
+    .card-info {
+        font-size: 20px;
+
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    html {
+
+        padding: env(safe-area-inset);
+    }
+
+    body {
+        width: 100vw;
+        
+
+    }
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .grid {
+
+
+        ;
+        gap: 0px;
+        padding-right: 10px;
+        grid-template-areas: "content";
+        flex: 1;
+        height: 10vh;
+        padding-top: 0px;
+        max-width: 375px;
+    }
+
+    .content {
+        grid-area: content;
+        width: 100%;
+        max-width: 375px;
+        margin: auto;
+
+    }
+
+    .row {
+
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .logo {
+        width: 50px;
+        margin-right: .5rem;
+
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 0;
+
+
+    }
+
+    .logo2 {
+        width: 50px;
+        margin-left: 1rem;
+
+    }
+
+    .header-div {
+        background-image: url("./img/finally.svg");
+        height: 60px;
+        background-position: bottom left;
+        background-size: cover;
+        z-index: -1;
+
+    }
+
+    .container {
+        align-content: center;
+    }
+
+    .presentation {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 70%;
+        width: 70%;
+        padding-left: 10%;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 25px
+    }
+
+    .card-info {
+        font-size: 15px;
+
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+}
